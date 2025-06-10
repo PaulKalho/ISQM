@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from uuid import uuid4
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -16,7 +15,7 @@ def test_login():
     driver.find_element(
         By.ID,
         "email"
-    ).send_keys(f"{uuid4()}@gmail.com")
+    ).send_keys("kalhornpaul@gmail.com")
     driver.find_element(
         By.ID,
         "street"
