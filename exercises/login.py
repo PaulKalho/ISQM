@@ -54,6 +54,8 @@ def test_login():
     if actual_message != "Registration successful!":
         raise Exception("TEST FAILED")
 
+    driver.close()
+
 
 if __name__ == "__main__":
     test_login()
